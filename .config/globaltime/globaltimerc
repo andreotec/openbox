@@ -1,0 +1,14 @@
+[Default Values]
+X-pos=119
+Y-pos=89
+Decorations=1
+Expand=0
+tz=/etc/localtime
+
+[NOVO]
+name=NOVO
+tz=NOVO
+
+[Horário local]
+name=Horário local
+tz=/etc/localtime

@@ -1,0 +1,9 @@
+#Para aplicativos gráficos que exigem autenticação, nesse exemplo firewalld
+pacman -S firewalld
+systemctl enable firewalld
+pacman -S pyqt4-common python-pyqt4 python2-pyqt4
+pacman -S mate-polkit-gtk3
+
+#.config/openbox/autostart
+/usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
+firewall-applet &

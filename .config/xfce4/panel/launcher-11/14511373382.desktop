@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=0.9.15
+Name=Telegram
+GenericName=Telegram
+Comment=Private and Secure Messenger
+Exec=telegram
+Icon=/opt/Telegram/icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Network;WebBrowser;
+Keywords=chat;messenger;internet;
+X-XFCE-Source=file:///usr/share/applications/telegram.desktop

@@ -1,0 +1,44 @@
+O Telegram é um aplicativo similar ao Whatsapp, que permite chat entre usuários usando como identificação o número de telefone. A vantagem é que, ao contrário do rival, o Telegram é multi-plataforma.
+
+Você pode acessar sua lista de contatos do celular, iPad/iPhone, Windows Phone, Web, Mac e Linux. São poucos os serviços que estão disponíveis em todas as plataformas.
+
+A proposta do serviço é ser um sistema seguro para troca de mensagens e arquivos. É possível acessar suas mensagens de qualquer dispositivo, elas ficam sincronizadas. Também dá para criar grupos de até 200 pessoas.
+Instalando no Fedora
+
+Antes de tudo, baixe o arquivo diretamente do site. Depois vamos extraí-lo para a pasta /opt.
+
+sudo tar xvf tsetup.* -C /opt
+
+Depois criamos o arquivo executável.
+
+sudo ln -s /opt/Telegram/Telegram /usr/bin/telegram
+
+Neste ponto, se você digitar telegram no terminal, o programa já abrirá.
+Adicionando o Telegram ao menu
+
+Para que o programa seja incluído com os demais no menu, é preciso ainda mais um passo. Ainda no terminal:
+
+sudo wget https://telegram.org/img/t_logo.png -O /opt/Telegram/icon.png
+
+Vamos criar o script para executar o programa:
+
+sudo wget https://telegram.org/img/t_logo.png -O /opt/Telegram/icon.png
+
+No arquivo que abrir, cole o código abaixo:
+
+[Desktop Entry]
+Version=0.x.x
+Name=Telegram
+GenericName=Telegram
+Comment=Private and Secure Messenger
+Exec=telegram
+Icon=/opt/Telegram/icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Network;WebBrowser;
+Keywords=chat;messenger;internet;
+
+Lembre de substituir a segunda linha pelo número da versão que você baixou. Salve (control + o) e saia (control + x).
+
+Pronto. Se for em Menu > Internet, o ícone estará lá.

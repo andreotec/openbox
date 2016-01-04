@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Auto-inicializador da LXRandR
+Comment=Inicia o xrandr com as configurações realizadas em LXRandR
+Exec=sh -c 'xrandr --output VGA-0 --mode 1024x768 --rate 60.00'
+OnlyShowIn=LXDE
